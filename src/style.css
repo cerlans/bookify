@@ -120,9 +120,13 @@ margin:30px;
 line-height: 1.5;
 
 }
+.bookCard .content h2 {
+  color:#009ef9;
+}
 
 .bookCard .content .subTitle {
   font-style:italic;
+  font-size:14px;
 }
 .footer {
   padding:30px;

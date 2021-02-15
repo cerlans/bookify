@@ -17,6 +17,9 @@ function getData(){
     setData(data.items)
   })
  }
+ // accessibility, runs the getData function upon pressing the enter key
+const getDataEnter = (event) => {event.key === 'Enter' ? getData() : null}
+
   return (
     <>
     <div className='heading'>
@@ -25,8 +28,7 @@ function getData(){
     </div>
     <div className='search'>
       <div>
-      <input type='text' placeholder='Type Auther,BookName,ISBN...' onChange = {function(event){
-        setString(event.target.value); }}/>
+      <input type='text' placeholder='Type Author,BookName,ISBN...' onChange = {(event) => {setString(event.target.value); }} onKeyPress={getDataEnter}/>
      <button onClick={getData}>Search Now</button>
        </div>
       </div>
