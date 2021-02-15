@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 *{
   margin:0px;
   padding:0px;
-  font-family: 'Oswald', sans-serif;
-    
+
+  font-family: 'Montserrat', sans-serif;    
 }
  h3{
    color:#009ef9; 
@@ -110,7 +110,15 @@ margin-bottom:30px;
   flex:1;
 }
 
+.bookCard {
+margin:30px; 
+  line-height: 1.5;
 
+}
+
+.bookCard .content .subTitle {
+  font-style:italic;
+}
 .footer {
   padding:30px;
   background:#009ef9;
