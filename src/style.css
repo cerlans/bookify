@@ -2,8 +2,9 @@
 *{
   margin:0px;
   padding:0px;
-
   font-family: 'Montserrat', sans-serif;    
+  box-sizing:border-box;
+  /*forgot to put border-box, input fields were causing overflow*/
 }
  h3{
    color:#009ef9; 
@@ -91,28 +92,32 @@ margin-bottom:30px;
 .heading h1 {
   text-align:center;
 }
-.search {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  min-height: 40vh;
-  padding:30px;
+.search{
+  width:100%;
+}
+.search div {
+ width:100%;
+ padding:20px;
 }
 .search input {
-  flex:1;
-  width:100%;
-  padding:10px;
-  text-align:cener;
+   width:100%;
+   padding:10px;
+  display:block;
 }
-.search button{
-  flex:1;
+.search button {
+  display:block;
+  background-color: #009ef9;  ; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top:10px;
 }
-
 .bookCard {
 margin:30px; 
-  line-height: 1.5;
+line-height: 1.5;
 
 }
 

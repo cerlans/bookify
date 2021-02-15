@@ -24,9 +24,11 @@ function getData(){
       You dont need to know the name of the book, if you know the name of the author or publisher, just type, search and find </h2>
     </div>
     <div className='search'>
+      <div>
       <input type='text' placeholder='Type Auther,BookName,ISBN...' onChange = {function(event){
         setString(event.target.value); }}/>
-     <button onClick={getData}>Button</button>
+     <button onClick={getData}>Search Now</button>
+       </div>
       </div>
       <div>
       {data.map(function(value,index){
