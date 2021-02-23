@@ -9,6 +9,9 @@
  h3{
    color:#009ef9; 
  }
+ p {
+   line-height:1.6;
+ }
  .pageButtons{
   display:inline-block;
   background-color: #009ef9;  ; 

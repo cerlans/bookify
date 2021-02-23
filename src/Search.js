@@ -47,6 +47,7 @@ const getDataEnter = (event) => {event.key === 'Enter' ? getData() : null};
           <>
             <div className='bookCard' key={index}>
                     <div className='thumbnail'>
+                    <img src={value.volumeInfo.imageLinks.smallThumbnail} />
                     </div>
                     <div className='content'>
                       <h2>{value.volumeInfo.title}</h2>
