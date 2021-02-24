@@ -1,5 +1,11 @@
 import React, {useState} from 'react';
-import {useHistory} from "react-router-dom";
+import {BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useParams,
+  useRouteMatch} from "react-router-dom";
+
 import "./style.css";
 
 
@@ -8,8 +14,8 @@ export default function App() {
   const [data,setData] = useState([]);
   const [query,setQuery] = useState('');
   const [isLoading,setLoading] = useState(false);
-  const history = useHistory();
-
+  let { path, url } = useRouteMatch();
+ 
 function getData(){
   setLoading(true);
   setQuery(searchString)
@@ -21,9 +27,7 @@ function getData(){
     setLoading(false);
   })
  }
- function reet(){
-   history.push('/Books')
- }
+
  // accessibility, runs the getData function upon pressing the enter key
 const getDataEnter = (event) => {event.key === 'Enter' ? getData() : null};
 
@@ -47,7 +51,6 @@ const getDataEnter = (event) => {event.key === 'Enter' ? getData() : null};
           <>
             <div className='bookCard' key={index}>
                     <div className='thumbnail'>
-                   <img src={value.volumeInfo.imageLinks.smallThumbnail} />
                     </div>
                     <div className='content'>
                       <h2>{value.volumeInfo.title}</h2>
@@ -55,13 +58,15 @@ const getDataEnter = (event) => {event.key === 'Enter' ? getData() : null};
                       <p>{`Authors: ${value.volumeInfo.authors ? value.volumeInfo.authors:'No author found'}`}</p>
                       <p>{`Publisher: ${value.volumeInfo.publisher ? value.volumeInfo.publisher:'No publisher found'}`}</p>
                       <p>{`Published Date: ${value.volumeInfo.publishedDate ? value.volumeInfo.publishedDate:'No date found'}`}</p>
-                      <button className='pageButtons' onclick={()=>{
+                      <button className='pageButtons' onClick={()=>{
                         console.log(value.volumeInfo.title)
-                      }}>Read a Sample</button>
-                      <button className='pageButtons' onClick={reet}>View More</button>
+                      }}>Read a Sample</button>  
+                      <Link to={`/Book/${value.id}`}><button className='pageButtons'>ViewMore</button></Link>
                     </div>
             </div>
           </>
+
+         
         )
       })}
       </div>)
@@ -70,27 +75,3 @@ const getDataEnter = (event) => {event.key === 'Enter' ? getData() : null};
     </>
   )
 }
-/*
-(isLoading) ? 'display this dummy spinner': 'display the true content'
-
-{data.map(function(value,index){
-        return (
-          <>
-            
-              <div className='bookCard' key={index}>
-                    <div className='thumbnail'>
-                   
-                    </div>
-                    <div className='content'>
-                      <h2>{value.volumeInfo.title}</h2>
-                      <p className='subTitle'> {value.volumeInfo.subtitle}</p>
-                      <p>{`Authors: ${value.volumeInfo.authors ? value.volumeInfo.authors:'No author found'}`}</p>
-                      <p>{`Publisher: ${value.volumeInfo.publisher ? value.volumeInfo.publisher:'No publisher found'}`}</p>
-                      <p>{`Published Date: ${value.volumeInfo.publishedDate ? value.volumeInfo.publishedDate:'No date found'}`}</p>
-                    </div>
-              </div>
-         
-          </>
-        )
-      })}
-*/

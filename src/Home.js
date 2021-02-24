@@ -1,14 +1,8 @@
 import React from 'react';
-import {useHistory} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const Home = function Home(){
-  const history = useHistory();
-console.log(history)
-
-
-function handleClick(){
-  history.push('/Search')
-}
+ 
 return(
     <>
     <nav className='navigation'>
@@ -21,7 +15,7 @@ return(
      <div className='wrapper'>
       <h1>Find the <span>Books</span> you are looking for anywhere </h1>
       <p>Search for books anywhere, you dont need to know the name of the book, if you know the name of the author or the publisher, just type and search. </p>
-      <button onClick={handleClick}>Search Now</button>    
+      <Link to="/Search"><button>Search Now!</button></Link>
      </div>
     
      <section className='firstSection contentWrapper'>
