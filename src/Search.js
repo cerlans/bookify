@@ -55,7 +55,9 @@ const getDataEnter = (event) => {event.key === 'Enter' ? getData() : null};
                       <p>{`Authors: ${value.volumeInfo.authors ? value.volumeInfo.authors:'No author found'}`}</p>
                       <p>{`Publisher: ${value.volumeInfo.publisher ? value.volumeInfo.publisher:'No publisher found'}`}</p>
                       <p>{`Published Date: ${value.volumeInfo.publishedDate ? value.volumeInfo.publishedDate:'No date found'}`}</p>
-                      <button className='pageButtons'>Read a Sample</button>
+                      <button className='pageButtons' onclick={()=>{
+                        console.log(value.volumeInfo.title)
+                      }}>Read a Sample</button>
                       <button className='pageButtons' onClick={reet}>View More</button>
                     </div>
             </div>
