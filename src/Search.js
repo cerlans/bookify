@@ -8,8 +8,7 @@ import {BrowserRouter as Router,
 
 import "./style.css";
 
-
-export default function App() {
+ function Search() {
   const [searchString,setString] = useState(' ');
   const [data,setData] = useState([]);
   const [query,setQuery] = useState('');
@@ -61,7 +60,7 @@ const getDataEnter = (event) => {event.key === 'Enter' ? getData() : null};
                       <button className='pageButtons' onClick={()=>{
                         console.log(value.volumeInfo.title)
                       }}>Read a Sample</button>  
-                      <Link to={`/Book/${value.id}`}><button className='pageButtons'>ViewMore</button></Link>
+                      <Link to={}><button className='pageButtons'>ViewMore</button></Link>
                     </div>
             </div>
           </>
@@ -71,7 +70,24 @@ const getDataEnter = (event) => {event.key === 'Enter' ? getData() : null};
       })}
       </div>)
       }
+       <Switch>
+        <Route exact path={path}>
+         
+        </Route>
+        <Route path={`${path}/:topicId`}>
+         <Book/>
+        </Route>
+      </Switch>
       </div>
     </>
   )
 }
+
+function Book(){
+  return (
+    <>
+    <h1>Help</h1>
+    </>
+  )
+}
+export default Search
