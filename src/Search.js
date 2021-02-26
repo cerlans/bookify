@@ -60,7 +60,7 @@ const getDataEnter = (event) => {event.key === 'Enter' ? getData() : null};
                       <button className='pageButtons' onClick={()=>{
                         console.log(value.volumeInfo.title)
                       }}>Read a Sample</button>  
-                      <Link to={}><button className='pageButtons'>ViewMore</button></Link>
+                      <Link to={`${url}/${value.id}`}><button className='pageButtons'>ViewMore</button></Link>
                     </div>
             </div>
           </>
@@ -71,12 +71,7 @@ const getDataEnter = (event) => {event.key === 'Enter' ? getData() : null};
       </div>)
       }
        <Switch>
-        <Route exact path={path}>
-         
-        </Route>
-        <Route path={`${path}/:topicId`}>
-         <Book/>
-        </Route>
+        <Route exact path={`${path}/:topicId`} component = {Book}/>
       </Switch>
       </div>
     </>
@@ -84,10 +79,12 @@ const getDataEnter = (event) => {event.key === 'Enter' ? getData() : null};
 }
 
 function Book(){
+   let { topicId } = useParams();
   return (
-    <>
-    <h1>Help</h1>
-    </>
-  )
+    <div>
+      <h3>{topicId}</h3>
+      <h4>Testing</h4>
+    </div>
+  );
 }
 export default Search
