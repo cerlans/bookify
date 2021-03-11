@@ -5,13 +5,7 @@ const Home = function Home(){
  
 return(
     <>
-    <nav className='navigation'>
-     <h1>Bookify</h1>
-     <ul>
-        <li><i className="fas fa-bars"></i></li>
-     </ul>
-     </nav>
-
+  
      <div className='wrapper'>
       <h1>Find the <span>Books</span> you are looking for anywhere </h1>
       <p>Search for books anywhere, you dont need to know the name of the book, if you know the name of the author or the publisher, just type and search. </p>

@@ -12,6 +12,9 @@
  p {
    line-height:1.6;
  }
+ a {
+   text-decoration:none;
+ }
  .pageButtons{
   display:inline-block;
   background-color: #009ef9;  ; 
@@ -158,4 +161,10 @@ line-height: 1.5;
 .footer {
   padding:30px;
   background:#009ef9;
+}
+
+.oneplace{
+  width:100%;
+  background:#009ef9;
+  height:50vh;
 }
