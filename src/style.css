@@ -100,6 +100,15 @@ margin-bottom:30px;
 .secondSection img {
   width:100%;
 }
+.filler {
+  background:#009ef9;
+  margin-bottom:1rem;
+  color:white;
+}
+.filler img {
+  width:100%;
+  color:white;
+}
 .heading {
   text-align:center;
   padding:30px;
@@ -161,6 +170,12 @@ line-height: 1.5;
 .footer {
   padding:30px;
   background:#009ef9;
+  color:white;
+  text-align:center;
+}
+
+.footer .social-links i {
+  font-size:30px;
 }
 
 .oneplace{
