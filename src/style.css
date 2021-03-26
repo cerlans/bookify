@@ -56,8 +56,9 @@ a {
 .navigation ul li {
 	margin-left: 20px;
 }
-.navigation .desktopnav{
-  display:none;
+
+.navigation .desktopnav {
+	display: none;
 }
 
 i {
@@ -90,9 +91,10 @@ i {
 }
 
 .wrapper .illustration img {
-    margin-top:2rem;
-		width: 100%;
+	margin-top: 2rem;
+	width: 100%;
 }
+
 span {
 	color: #009ef9;
 }
@@ -223,6 +225,24 @@ span {
 }
 
 @media (min-width:1025px) {
+	a {
+		text-decoration: none;
+		color: none;
+		all: unset;
+	}
+	button {
+		all: unset;
+		display: block;
+		background-color: #009ef9;
+		;
+		border: none;
+		color: white;
+		padding: 10px 12px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 16px;
+		margin-right: 10px;
+	}
 	.navigation {
 		justify-content: space-between;
 		margin-left: 3rem;
@@ -236,6 +256,9 @@ span {
 	}
 	.navigation .mobilenav {
 		display: none;
+	}
+	.navigation .desktopnav {
+		display: flex;
 	}
 	.wrapper {
 		display: flex;
@@ -258,11 +281,11 @@ span {
 	.firstSection div {
 		flex: 1;
 	}
-  .firstSection div:nth-child(1){
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-  }
+	.firstSection div:nth-child(1) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 	.secondSection {
 		display: flex;
 	}
@@ -272,10 +295,78 @@ span {
 	.secondSection div:nth-child(1) {
 		flex: 1;
 		order: 2;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
- 
+	.heading {
+		width: 50%;
+		margin: 0 auto;
+	}
+	.search {
+		width: 50%;
+		margin: 0 auto;
+	}
+	.booksContainer {
+		display: flex;
+		justify-content: center;
+		margin-left: 2rem;
+		margin-right: 2rem;
+		flex-wrap: wrap;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.bookCard {
+		padding: 2rem;
+		--tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+		box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+		width: 23%;
+	}
+	.bookCard button {
+		margin-top: 1rem;
+	}
+	.bookDemo {
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
+	}
+	.bookDemo div {
+		height: auto;
+	}
+	.bookDemo .bookDetails {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin-top: 2.5rem;
+    flex:1;
+    border:1px solid
+	}
+	.bookDemo .bookDetails ul {
+		list-style-type: none;
+		width: 50%;
+		margin: 0 auto;
+	}
+	.bookDemo .bookDetails ul li {
+		margin: 1rem;
+		text-align: justify;
+	}
+	.bookDemo .bookDescription {
+		padding: 2rem;
+    flex:1;
+        border:1px solid
+
+	}
+	.bookDemo .bookDescription p {
+		line-height: 1.6;
+	}
+	.sampleButtons {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.sampleButtons button {
+		margin: 2rem;
+		cursor: pointer;
+	}
 }
 

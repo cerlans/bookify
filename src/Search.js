@@ -62,7 +62,7 @@ function Search() {
         {isLoading ? (
           <div className="spinner"></div>
         ) : (
-          <div>
+          <div className='booksContainer'>
             {data.map(function (value, index) {
               return (
                 <>
