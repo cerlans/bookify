@@ -39,14 +39,9 @@ const Home = function Home() {
         </p>
         <img src="https://i.vgy.me/NbcCCo.png" alt="A man Thinking" />
       </section>
-      <section className='filler contentWrapper'>
-        <div>
-          <h1>All the books you look for in one place</h1>
-          <img src="https://i.vgy.me/65dTcM.png" alt="65dTcM.png"/>
-        </div>
-      </section>
+     
       <section className = 'tech contentWrapper'>
-        <div><h1>Technologies used</h1></div>
+        <div><h1></h1></div>
       </section>
       <footer className="footer">
         <h1>Bookify</h1>

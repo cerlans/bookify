@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Book =  function Book() {
+function Book(){
   return (
     <>
-    <h1>Testing one two three</h1>
+    <h1>testing params</h1>
     </>
   )
 }

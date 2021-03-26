@@ -104,21 +104,10 @@ function Search() {
             })}
           </div>
         )}
-        <Switch>
-          <Route exact path={`${path}/:topicId`} component={Book} />
-        </Switch>
       </div>
     </>
   );
 }
 
-function Book() {
-  let { topicId } = useParams();
-  return (
-    <div>
-      <h3>{topicId}</h3>
-      <h4>Testing</h4>
-    </div>
-  );
-}
+
 export default Search;
