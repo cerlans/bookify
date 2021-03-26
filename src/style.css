@@ -56,6 +56,9 @@ a {
 .navigation ul li {
 	margin-left: 20px;
 }
+.navigation .desktopnav{
+  display:none;
+}
 
 i {
 	font-size: 30px;
@@ -86,6 +89,10 @@ i {
 	cursor: pointer;
 }
 
+.wrapper .illustration img {
+    margin-top:2rem;
+		width: 100%;
+}
 span {
 	color: #009ef9;
 }
