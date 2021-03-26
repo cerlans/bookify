@@ -16,17 +16,15 @@ export default function App() {
     <>
       <BrowserRouter>
         <Nav />
-        <Switch>
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/Search">
+          <Route exact path="/Search">
             <Search />
           </Route>
-          <Route path="/Book">
+          <Route exact path="/Search/Book/:id">
             <Book />
           </Route>
-        </Switch>
       </BrowserRouter>
     </>
   );
