@@ -37,10 +37,14 @@ function Nav() {
         <Link to="/">
           <h1>Bookify</h1>
         </Link>
-        <ul>
+        <ul className='mobilenav'>
           <li>
             <i className="fas fa-bars"></i>
           </li>
+        </ul>
+        <ul className='desktopnav'>
+          <li>About</li>
+          <li>Contact</li>
         </ul>
       </nav>
     </>

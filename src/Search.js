@@ -16,7 +16,7 @@ function Search() {
   const [query, setQuery] = useState("");
   const [isLoading, setLoading] = useState(false);
   let { path, url } = useRouteMatch();
-  console.log(url)
+  
   function getData() {
     setLoading(true);
     setQuery(searchString);
@@ -94,7 +94,10 @@ function Search() {
                       >
                         Read a Sample
                       </button>
-                      <Link to={`${url}/Books/${value.id}`}>
+                      <Link to={{
+                        pathname:`${url}/Book/${value.id}`,
+                        state:value.volumeInfo,
+                      }}>
                         <button className="pageButtons">ViewMore</button>
                       </Link>
                     </div>
