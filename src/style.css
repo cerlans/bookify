@@ -1,6 +1,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -19,7 +20,7 @@ p {
 
 a {
 	text-decoration: none;
-	color: white;
+  color:inherit;
 }
 
 ul {
@@ -238,7 +239,6 @@ box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #
 .bookDemo button {
   	display: block;
 	background-color: #009ef9;
-	;
 	border: none;
 	color: white;
 	padding: 12px 22px;
@@ -297,7 +297,6 @@ box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #
 		all: unset;
 		display: block;
 		background-color: #009ef9;
-		;
 		border: none;
 		color: white;
 		padding: 10px 12px;
@@ -317,12 +316,19 @@ box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #
 	.navigation ul {
 		flex: 1;
 	}
+  .navigation ul li {
+    cursor:pointer;
+    color:#009ef9;
+    font-size:20px;
+  }
 	.navigation .mobilenav {
 		display: none;
 	}
 	.navigation .desktopnav {
 		display: flex;
 	}
+ 
+
 	.wrapper {
 		display: flex;
 	}
@@ -391,6 +397,7 @@ box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #
 	.bookDemo {
 		width: 100%;
 		margin: 0 auto;
+    margin-top:5rem;
 		display: flex;
 		justify-content: space-around;
 	}
@@ -399,12 +406,18 @@ box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #
 	}
 	.bookDemo .bookDetails {
 		display: flex;
+    padding:1rem;
 		flex-direction: column;
 		text-align: center;
 		margin-top: 2.5rem;
 		flex: 1;
-		border: 1px solid
+	
 	}
+  .bookDemo .bookDetails h1 {
+
+    text-align:right;
+    width:50%;
+  }
 	.bookDemo .bookDetails ul {
 		list-style-type: none;
 		width: 50%;
@@ -417,10 +430,12 @@ box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #
 	.bookDemo .bookDescription {
 		padding: 2rem;
 		flex: 1;
-		border: 1px solid
 	}
 	.bookDemo .bookDescription p {
 		line-height: 1.6;
+	}
+  	.bookDemo .bookDescription h1{
+	 text-align: center;
 	}
 	.sampleButtons {
 		display: flex;

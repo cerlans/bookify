@@ -43,8 +43,8 @@ function Nav() {
           </li>
         </ul>
         <ul className='desktopnav'>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href='https://github.com/cerlans/bookify' target='_blank'>About</a></li>
+          <li><a href='https://github.com/cerlans' target='_blank'>Contact</a></li>
         </ul>
       </nav>
       <ul className='mobile-Hidden'>

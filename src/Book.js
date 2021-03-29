@@ -30,7 +30,7 @@ function Book() {
               </a>
             </button>
             <button>
-              <a href={`${data.state.previewLink}`}>Free Sample</a>
+              <a href={`${data.state.previewLink}`}target="_blank">Free Sample</a>
             </button>
           </div>
         </div>
