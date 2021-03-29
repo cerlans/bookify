@@ -67,7 +67,6 @@ function Search() {
               return (
                 <>
                   <div className="bookCard" key={index}>
-                    <div className="thumbnail"></div>
                     <div className="content">
                       <h2>{value.volumeInfo.title}</h2>
                       <p className="subTitle"> {value.volumeInfo.subtitle}</p>
@@ -88,17 +87,14 @@ function Search() {
                       }`}</p>
                       <button
                         className="pageButtons"
-                        onClick={() => {
-                          console.log(value.volumeInfo.title);
-                        }}
-                      >
-                        Read a Sample
+                         >
+                        <a href={`${value.volumeInfo.previewLink}`} target='_blank'>Read a Sample</a>
                       </button>
                       <Link to={{
                         pathname:`${url}/Book/${value.id}`,
                         state:value.volumeInfo,
                       }}>
-                        <button className="pageButtons">ViewMore</button>
+                        <button className="pageButtons">View More</button>
                       </Link>
                     </div>
                   </div>

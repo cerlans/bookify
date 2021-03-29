@@ -21,6 +21,7 @@ function Book() {
           </div>
         </div>
         <div className="bookDescription">
+          <h1>Description</h1>
           <p>{data.state.description}</p>
           <div className="sampleButtons">
             <button>

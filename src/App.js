@@ -47,6 +47,10 @@ function Nav() {
           <li>Contact</li>
         </ul>
       </nav>
+      <ul className='mobile-Hidden'>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
     </>
   );
 }
