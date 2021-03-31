@@ -59,6 +59,10 @@ function Search() {
         </div>
       </div>
       <div>
+      {isLoading ? null :  <div className='searchImage'> 
+      <img src="https://i.vgy.me/LjojoY.png" alt="LjojoY.png"/>
+      <p>Results will be loaded below</p>
+      </div>}
         {isLoading ? (
           <div className="spinner"></div>
         ) : (

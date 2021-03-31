@@ -64,7 +64,10 @@ ul {
 }
 
 .navigation .desktopnav {
-	display: none;
+  margin-top:5px;
+	display: flex;
+  text-transform:uppercase;
+  color:#009ef9;
 }
 
 i {
@@ -169,6 +172,15 @@ span {
 	width: 100%;
 	padding: 20px;
 }
+.searchImage {
+  margin-bottom: 2rem;
+}
+.searchImage img {
+ width:100%;
+}
+.searchImage p {
+  text-align:center;
+}
 
 .search input {
 	width: 100%;
@@ -259,6 +271,7 @@ box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #
 	width: 120px;
 	height: 120px;
 	animation: spin 2s linear infinite;
+  margin-bottom:2rem;
 }
 
 @keyframes spin {
@@ -275,12 +288,14 @@ box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #
 	background: #009ef9;
 	color: white;
 	text-align: center;
+
 }
 
-.footer .social-links i {
-	font-size: 30px;
+.footer i {
+  color:white;
+  margin-top:1rem;
+  font-size:3rem;
 }
-
 .oneplace {
 	width: 100%;
 	background: #009ef9;

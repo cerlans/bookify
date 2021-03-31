@@ -25,6 +25,7 @@ export default function App() {
           <Route exact path="/Search/Book/:id">
             <Book />
           </Route>
+          <Footer/>
       </BrowserRouter>
     </>
   );
@@ -37,11 +38,6 @@ function Nav() {
         <Link to="/">
           <h1>Bookify</h1>
         </Link>
-        <ul className='mobilenav'>
-          <li>
-            <i className="fas fa-bars"></i>
-          </li>
-        </ul>
         <ul className='desktopnav'>
           <li><a href='https://github.com/cerlans/bookify' target='_blank'>About</a></li>
           <li><a href='https://github.com/cerlans' target='_blank'>Contact</a></li>
@@ -53,4 +49,15 @@ function Nav() {
       </ul>
     </>
   );
+}
+
+function Footer(){
+   return ( <footer className="footer">
+        <h1>Bookify</h1>
+        <p>© Copyright 2021 Kevin Gomez @Cerlans. All rights reserved. </p>
+        <div className='socialLinks'>
+          <a href='https://github.com/cerlans' target='_blank'><i className="fab fa-github-square"></i></a>
+        </div>
+      </footer>
+   )
 }

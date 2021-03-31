@@ -58,10 +58,6 @@ const Home = function Home() {
           <h1></h1>
         </div>
       </section>
-      <footer className="footer">
-        <h1>Bookify</h1>
-        <p>© Copyright 2021 Kevin Gomez @Cerlans. All rights reserved. </p>
-      </footer>
     </>
   );
 };
