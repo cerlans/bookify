@@ -391,6 +391,18 @@ box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #
 		width: 50%;
 		margin: 0 auto;
 	}
+  .searchImage {
+  margin-bottom: 2rem;
+  width:50%;
+  margin:0 auto;
+}
+.searchImage img {
+ width:100%;
+}
+.searchImage p {
+  text-align:center;
+}
+
 	.booksContainer {
 		display: flex;
 		justify-content: center;
